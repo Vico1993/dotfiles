@@ -4,6 +4,6 @@
 # Because I don't like to use mkdir / COPY PAST
 
 # SETUP My own bash profile
-if [ ! -z "$USER" ]
-    cp .bash_profile /home/$USER/.bash_profile
+if [ ! -z "$INSTALL_USER" ]
+    cp .bash_profile /home/$INSTALL_USER/.bash_profile
 fi

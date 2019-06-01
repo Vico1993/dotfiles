@@ -7,13 +7,13 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # Set up the main user ( usefull for linux environement )
-USER = "victor"
+export INSTALL_USER="victor"
 
 # execute all installation files in ./bin directory
 for file in ./bin/*.sh; do
 	# Check if this file is readable
 	if [[ -r "$file" ]]
-		bash "$file" -H
+		bash $file
 	else 
 		echo "IMPOSSIBLE TO EXECUTE $file"
 	fi

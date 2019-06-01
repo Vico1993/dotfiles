@@ -19,8 +19,8 @@ fi
 # Download and install the package from google
 curl -sSL "https://storage.googleapis.com/golang/go${GO_VERSION}.${kernel}-amd64.tar.gz" | tar -v -C /usr/local -xz
 # if USER set, then rebuild stdlib for faster builds
-if [ ! -z "$USER" ]
-    chown -R "$USER" /usr/local/go/pkg
+if [ ! -z "$INSTALL_USER" ]
+    chown -R "$INSTALL_USER" /usr/local/go/pkg
 fi
 # Installation of CGO
 CGO_ENABLED=0 go install -a -installsuffix cgo std
