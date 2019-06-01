@@ -13,8 +13,9 @@ export INSTALL_USER="victor"
 for file in ./bin/*.sh; do
 	# Check if this file is readable
 	if [[ -r "$file" ]]
+	then
 		bash $file
-	else 
+	else
 		echo "IMPOSSIBLE TO EXECUTE $file"
 	fi
 done
