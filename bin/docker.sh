@@ -13,7 +13,7 @@ curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compo
 chmod +x /usr/local/bin/docker-compose
 
 # Add our main user ( if set ) to the docker group because I don't want to sign in as ADMIN
-if [ ! -z "$INSTALL_USER" ]
+if [ ! -z "$INSTALL_USER" ]; then
     groupadd docker
     gpasswd -a "$INSTALL_USER" docker
 fi
