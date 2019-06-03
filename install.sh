@@ -23,3 +23,6 @@ apt update -y
 apt-get -y upgrade
 
 apt-get install -y git docker-ce
+
+git config --global user.name "Victor Piolin"
+git config --global user.email victor.piolin@gmail.com
