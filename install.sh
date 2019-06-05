@@ -26,3 +26,8 @@ apt-get install -y git docker-ce
 
 git config --global user.name "Victor Piolin"
 git config --global user.email victor.piolin@gmail.com
+
+#Git LFS Because Big stuff sometimes are good... sometimes.
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash
+
+apt-get install -y git-lfs
